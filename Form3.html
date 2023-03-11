@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+     * {
+		font-family:  Arial, Helvetica, sans-serif;
+	 }
+  </style>
+</head> 
+<body>
+<!-- conteúdos da página -->
+   <h1>terceiro formulário</h1>
+   
+   <form action="Cadastro.php" method="get"  autocomplete="on">
+    <!--<form autocomplete="off">-->
+      <p><label for="i_nome"> Nome Completo:</label> <!--util para celular, área maior para digitar-->
+        <input type="text" name="nome" id="i_nome" 
+             required  maxlength="25"  placeholder="Nome Completo" 
+             autocomplete="nome">
+      </p>
+      <p><label for="i_media"> Média:</label>
+        <input type="number" name="media" id="i_media" min="0" max="10"
+         step="0.5" value="5" required> 
+      </p>
+      <p><label for="i_data"> Data:</label>
+         <input type="date" name="data" id="i_data">
+      </p>
+      <p><label for="i_hora"></label>Hora:
+        <input type="time" name="hora" id="i_hora">
+      </p>
+      <p>
+        <input type="submit" value="Enviar"><!--aparece no navegador-->
+        <input type="reset"  value ="Limpar">
+      </p>
+   </form>
+</body>
+</html>
+
